@@ -1,6 +1,6 @@
 {
   "name": "joey-nodejs-logger",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "nodejs log function",
   "main": "dist/index.js",
   "files": [
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/JoeyTsai301/nodejs-logger#readme",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",    
+    "version": "npm run build && git add -A",
+    "postversion": "git push && git push --tags"
   },
   "pre-commit": "lint:eslint",
   "dependencies": {

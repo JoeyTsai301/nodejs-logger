@@ -1,6 +1,3 @@
-config/*
-!config/sample.json
-config.json
 aws_config.json
 .serverless/
 logs/
