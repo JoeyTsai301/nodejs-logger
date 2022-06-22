@@ -1,0 +1,38 @@
+{
+  "name": "joey-nodejs-logger",
+  "version": "1.0.0",
+  "description": "nodejs log function",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "nodejs",
+    "logger"
+  ],
+  "author": "joey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyTsai301/nodejs-logger"
+  },
+  "homepage": "https://github.com/JoeyTsai301/nodejs-logger#readme",
+  "scripts": {
+    "build": "tsc"
+  },
+  "pre-commit": "lint:eslint",
+  "dependencies": {
+    "@types/node": "^10.12.21",
+    "config": "^3.3.7",
+    "debug": "^4.1.1",
+    "split": "^1.0.1",
+    "winston": "^3.7.2",
+    "winston-transport": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-plugin-import": "^2.15.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.3.1"
+  }
+}
