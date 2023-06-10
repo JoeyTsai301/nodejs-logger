@@ -1,8 +1,10 @@
 import { Request, Response } from "express";
 import humps from 'humps';
 
-import { createLogger } from 'joey-nodejs-logger';
-const logger = createLogger('route:index');
+import { getLogger  } from '../../../src/index';
+// joey-nodejs-logger
+const label = 'routes:index'
+const logger = getLogger();
 
 import { printText } from '../modules/index';
 import { ErrorStatus } from '../constants/apiStatus';
@@ -15,10 +17,10 @@ import { ErrorStatus } from '../constants/apiStatus';
 export const query = async (req: Request, res: Response, next) => {  
   try{    
     await printText("print text");
-    logger.info("log");
-    logger.debug("log");
-    logger.warn("log");
-    logger.error("log");
+    logger.info("log", {label});
+    logger.debug("log", {label});
+    logger.warn("log", {label});
+    logger.error("log", {label});
     
     res.json("ok");
   }
