@@ -1,0 +1,14 @@
+{
+  "appName":"nodejs-logger-demo",
+  "port":"3000",
+  "loggerService": {
+    "enable": true,
+    "host":"localhost",
+    "ssl": false,
+    "path":"log",
+    "port": 3002,
+    "header": {
+      "abc": "123"
+    }
+  }
+}
