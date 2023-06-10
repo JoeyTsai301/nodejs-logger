@@ -21,3 +21,4 @@ tmp
 packaged-sam.yaml
 .nyc_output
 cloudformation.yaml
+nodejs-logger-demo/config/
